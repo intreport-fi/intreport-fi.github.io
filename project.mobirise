@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-01-24 14:29",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://intreport-fi.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://intreport-fi.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "favicon": false,
+    "mbrsiteDomain": "2cbdxy5mmi",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Interport Finance™ | Home Official Site",
+        "meta_descr": "WebInterport Finance is a protocol that aggregates prices from more than 0 DEXes on 14 networks and allows users to trade assets across supported chains with no additional …",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://interport-fi.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/interport-fi.png\" alt=\"Interport Fi\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u2gKj67H8A",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://intreport-fi.github.io/\" class=\"text-primary\">Interport Finance</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><p>Understanding <a href=\"https://interport.fi/\" class=\"text-primary\">Interport Finance</a></p></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In a world characterized by global connectivity and interdependence, efficient cross-border payments and trade finance solutions are essential for businesses and individuals alike. Interport Finance has emerged as a disruptive force, leveraging blockchain technology to streamline and revolutionize these processes. In this article, we explore the unique features, benefits, and potential impact of Interport Finance as it transforms the landscape of cross-border transactions and trade finance.\n<br>\n<br>Understanding <a href=\"https://interport.fi/\" class=\"text-primary\">Interport Finance</a>:\n<br>a. Blockchain-Powered Platform: Interport Finance operates on a blockchain-powered platform, harnessing the transparency, security, and speed of distributed ledger technology. By utilizing blockchain, Interport Finance ensures trust, immutability, and efficiency in cross-border transactions and trade finance operations.\n<br>\n<br>b. Global Network: Interport Finance has established a global network of participants, including banks, financial institutions, and businesses involved in international trade. This network facilitates seamless collaboration, enabling efficient and cost-effective cross-border transactions and trade finance processes.\n<br>\n<br>Key Features and Advantages of Interport Finance:\n<br>a. Cross-Border Payments: Interport Finance enables fast and secure cross-border payments, eliminating intermediaries and reducing transaction fees. By leveraging blockchain technology, transactions can be settled in near real-time, enhancing liquidity and enabling businesses to operate more efficiently on a global scale.\n<br>\n<br>b. Smart Contracts: Interport Finance utilizes smart contracts to automate and streamline trade finance processes. Smart contracts execute predefined conditions and trigger actions, ensuring transparency, efficiency, and trust in trade transactions. This automation reduces administrative burdens, minimizes errors, and expedites the entire trade finance lifecycle.\n<br>\n<br>c. Digitized Trade Finance Instruments: Interport Finance digitizes traditional trade finance instruments, such as letters of credit and guarantees, making them more accessible and efficient. Digital instruments eliminate the need for physical documents and manual processing, reducing costs, and enhancing security. This digital transformation simplifies trade finance operations, fostering greater participation and inclusivity.\n<br>\n<br>d. Risk Mitigation: Interport Finance incorporates risk mitigation mechanisms, such as escrow services and dispute resolution protocols, to minimize potential risks in cross-border transactions. These safeguards provide assurance to participants, reduce counterparty risks, and facilitate smoother trade finance operations.\n<br>\n<br>e. Transparency and Traceability: Blockchain technology enables Interport Finance to ensure transparency and traceability throughout the entire cross-border payment and trade finance process. Participants can track the progress of transactions, verify authenticity, and gain insights into the movement of goods and funds. This transparency enhances trust, reduces fraud, and facilitates compliance with regulatory requirements.\n<br>\n<br>Impact and Benefits:\n<br>a. Cost Reduction: Interport Finance's blockchain-based platform significantly reduces costs associated with cross-border payments and trade finance. By eliminating intermediaries, streamlining processes, and reducing administrative overhead, businesses can benefit from lower transaction fees and operational expenses, enhancing their competitiveness in the global market.\n<br>\n<br>b. Enhanced Efficiency and Speed: Traditional cross-border transactions and trade finance operations are often marred by delays, paperwork, and complex processes. Interport Finance offers near real-time settlement, automated workflows, and digitized instruments, enabling faster and more efficient cross-border transactions and trade finance activities.\n<br>\n<br>c. Financial Inclusion: Interport Finance promotes financial inclusion by providing access to cross-border payment and trade finance services to businesses of all sizes. Small and medium-sized enterprises (SMEs) can leverage the platform to expand their global reach, access affordable financing, and participate in international trade on equal footing with larger corporations.\n<br>\n<br>d. Reduced Fraud and Disputes: The transparency and traceability offered by Interport Finance's blockchain platform help mitigate fraud and disputes in cross-border transactions. The immutability of blockchain records and the automated execution of smart contracts minimize the potential for fraudulent activities, promoting greater trust among participants.\n<br>\n<br>Challenges and Future Development:\n<br>a. Regulatory Environment: The adoption of blockchain technology in the financial industry is still evolving, and regulatory frameworks vary across jurisdictions. Interport Finance must navigate and collaborate with regulatory bodies to ensure compliance and foster a conducive environment for its operations.\n<br>\n<br>b. Integration with Legacy Systems: Interport Finance needs to integrate with existing legacy systems and infrastructure employed by banks and financial institutions. Collaboration and interoperability with traditional financial systems will be crucial for widespread adoption and seamless integration into the global financial ecosystem.\n<br>\n<br>c. Education and Awareness: Blockchain technology and its potential benefits are still relatively new concepts for many businesses and individuals. Interport Finance must invest in educational initiatives to raise awareness, build trust, and foster understanding of the advantages and opportunities offered by blockchain-based cross-border payments and trade finance solutions.\n<br>\n<br>Conclusion: Revolutionizing Cross-Border Finance\n<br>Interport Finance is at the forefront of revolutionizing cross-border payments and trade finance, leveraging blockchain technology to enhance efficiency, reduce costs, and promote financial inclusion. By eliminating intermediaries, automating processes, and digitizing trade finance instruments, Interport Finance paves the way for faster, more secure, and transparent cross-border transactions.\n<br>\n<br>While challenges such as regulatory compliance and integration with legacy systems remain, Interport Finance's disruptive potential in transformingthe cross-border finance landscape is undeniable. The platform's impact on cost reduction, efficiency enhancement, and financial inclusion holds the promise of empowering businesses, particularly SMEs, to thrive in the global marketplace.\n<br>\n<br>As Interport Finance continues to evolve and navigate the complex landscape of regulations and traditional financial systems, collaboration with industry stakeholders and proactive engagement with regulatory authorities will be crucial. Education and awareness initiatives will also play a vital role in driving adoption and fostering trust in blockchain-based cross-border finance solutions.\n<br>\n<br>With its blockchain-powered platform, global network, and commitment to transparency and efficiency, Interport Finance is poised to reshape cross-border payments and trade finance, unlocking new opportunities, and transforming the way businesses engage in international trade. As the global economy becomes increasingly interconnected, Interport Finance is paving the way for a more inclusive, secure, and efficient future of cross-border finance.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u2gKjK3ft0",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
